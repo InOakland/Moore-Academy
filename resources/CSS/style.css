@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     
 }
@@ -7,7 +12,7 @@ body {
     color: #4A4A4A;
 }
 
-#ma {
+header#ma {
     display: inline;
     height: 32px;
     margin: 0px 24px;
@@ -19,7 +24,8 @@ body {
 nav {
     height: 64px;
     text-align: end;
-    justify-content: right;
+    justify-content: flex-end
+    align-content: baseline;
     margin: 0px;
     display: inline-flex;
     padding: 0px;
@@ -29,6 +35,11 @@ nav {
 span {
     padding: 16px;
     padding-right: 24px;
+}
+
+span #login {
+    padding: 10px 25px;
+    color: yellow;
 }
 
 .container {
@@ -50,14 +61,26 @@ span {
     display: block;
     height: auto;
     margin: 32px 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.conRight a {
+    padding: 8px 100px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0px 4px;
+    background-color: #4A4A4A;
+    color: #ffffff;
 }
 
 .container .conLeft {
     height: auto;
     width: 60%;
+    align-items: center;
 }
 
-.container #sec1 {
+#sec1.container {
     background-color: #D8D8D8;
 }
 /*
