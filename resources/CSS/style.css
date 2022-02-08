@@ -5,10 +5,18 @@
 
 html {
     font-family: 'Montserrat', 'Poppins', sans-serif;
+    width: 100%;
 }
 
-header {
-    background-color: #E6C019;
+body {
+    width: 100%;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E63109;
 }
 
 p {
@@ -17,7 +25,7 @@ p {
 
 ul {
     display: flex;
-    width: auto;
+    width: 100%;
     background-color: #E63109;
     box-sizing: border-box;
     justify-content: space-between;
@@ -31,25 +39,104 @@ li a {
     color: #E6C019;
 }
 
+.container
+
 .container p, .container h2 {
     padding: 1rem 0.6em;
 }
 
 .container.alpha {
-    display: block;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     box-sizing: border-box;
     background-color: #E6C019;
     color: #E63109;
+    padding: 5rem 0rem;
 }
 
-.container.alpha img, .container.beta img {
+.container.alpha a {
+    display: inline;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+    color: #E6C019;
+    background-color: #E63109;
+    width: 10vw;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.beta .conLeft {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.container.beta .text {
+    padding-left: 2rem;
+    color: #E63109;
+}
+
+.container.beta img {
     display: flex;
     height: auto;
     width: 100vw;
 }
 
-.conRight .card img {
+#author {
+    font-size: 1em;
+    margin: 3rem 0rem;
+}
+.alpha .conLeft {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.conLeft img {
+    display: flex;
     box-sizing: border-box;
+    background-color: blue;
+    width: 50%;
     height: auto;
+    align-self: center;
+    border: 5px solid #E63109;
+    border-radius: 100%;
+}
+
+.beta .conLeft img {
+    display: inline-flex;
+    width: 50%;
+    height: auto;
+    transform: rotate(270deg);
+    align-self: center;
+}
+
+.conRight .card {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 1rem 0.5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    background-color: #E63109;
     width: 100%;
+}
+
+.conRight .card ul {
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 75%;
+    padding: 0;
+    margin: 0;
+}
+
+.conRight .card img {
+    height: auto;
+    width: 25%;
+    border-radius: 100%;
+    margin: 0.5rem 1rem;
 }
