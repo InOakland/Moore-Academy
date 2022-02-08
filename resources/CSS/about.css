@@ -1,0 +1,8 @@
+.conLeft{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.conLeft img {
+    
+}
