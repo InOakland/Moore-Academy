@@ -8,10 +8,6 @@ html {
     width: 100%;
 }
 
-body {
-    width: 100%;
-}
-
 .logo-title {
     display: flex;
     align-items: center;
@@ -39,20 +35,14 @@ li a {
     color: #E6C019;
 }
 
-.container
-
-.container p, .container h2 {
-    padding: 1rem 0.6em;
-}
 
 .container.alpha {
     display: flex;
-    width: 100%;
     flex-direction: column;
     box-sizing: border-box;
     background-color: #E6C019;
     color: #E63109;
-    padding: 5rem 0rem;
+    padding: 5rem 2rem;
 }
 
 .container.alpha a {
@@ -62,6 +52,7 @@ li a {
     align-content: center;
     justify-content: center;
     padding: 1rem 3rem;
+    margin: 1rem 0rem;;
     color: #E6C019;
     background-color: #E63109;
     width: 10vw;
@@ -100,12 +91,12 @@ li a {
 .conLeft img {
     display: flex;
     box-sizing: border-box;
-    background-color: blue;
     width: 50%;
     height: auto;
     align-self: center;
     border: 5px solid #E63109;
     border-radius: 100%;
+    margin: 3rem;
 }
 
 .beta .conLeft img {
@@ -118,6 +109,7 @@ li a {
 
 .conRight .card {
     display: inline-flex;
+    box-sizing: border-box;
     flex-direction: row;
     padding: 1rem 0.5rem;
     margin-bottom: 5rem;
